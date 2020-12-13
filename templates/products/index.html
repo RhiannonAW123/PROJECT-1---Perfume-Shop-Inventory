@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
+  <TR>
+     <TH COLSPAN="7"><BR><H3>Products</H3>
+     </TH>
+  </TR>
+  <TR>
+     <TH>Name</TH>
+     <TH>Description</TH>
+     <TH>Stock</TH>
+     <TH>Buy Price</TH>
+     <TH>Sell Price</TH>
+     <TH>Manufacturer</TH>
+     <TH></TH>
+  </TR>
+  {% for product in all_products %}
+  <TR ALIGN="CENTER">
+    <TD>{{product.name}}</TD>
+    <TD>{{product.description}}</TD>
+    <TD>{{product.stock}}</TD>
+    <TD>{{product.buy_price}}</TD>
+    <TD>{{product.sell_price}}</TD>
+    <TD>{{product.manufacturer.name}}</TD>
+    <TD><a href="products/{{product.id}}/edit">Edit</a></TD>
+  </TR>      
+  {% endfor %}
+</TABLE>
+
+<a href="products/new">Add Product</a>
+
+{% endblock %}

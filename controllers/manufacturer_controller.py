@@ -13,7 +13,7 @@ def manufacturers():
 
 # NEW
 # GET
-@manufacturers_blueprint.route("/new", methods=['GET'])
+@manufacturers_blueprint.route("/manufacturers/new", methods=['GET'])
 def new_manufacturers():
     return render_template("manufacturers/new.html")
 
@@ -23,8 +23,8 @@ def new_manufacturers():
 @manufacturers_blueprint.route("/manufacturers",  methods=['POST'])
 def create_manufacturer():
     name = request.form['name']
-    contact = request.form['cantact']
-    manufacturer = Manufacturer(name, contact, product_id)
+    contact = request.form['contact']
+    manufacturer = Manufacturer(name, contact)
     manufacturer_repository.save(manufacturer)
     return redirect('/manufacturers')
 
@@ -48,7 +48,7 @@ def edit_manufacturer(id):
 def update_manufacturer(id):
     name = request.form['name']
     contact = request.form['contact']
-    manufacturer = Manufacturer(name, contact)
+    manufacturer = Manufacturer(name, contact, id)
     manufacturer_repository.update(manufacturer)
     return redirect('/manufacturers')
 

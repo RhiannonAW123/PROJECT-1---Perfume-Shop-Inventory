@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<TABLE BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="3">
+  <TR>
+     <TH COLSPAN="3"><BR><H3>Manufacturers</H3>
+     </TH>
+  </TR>
+  <TR>
+     <TH>Name</TH>
+     <TH>Contact</TH>
+     <TH></TH>
+  </TR>
+  {% for manufacturer in all_manufacturers %}
+  <TR ALIGN="CENTER">
+    <TD>{{manufacturer.name}}</TD>
+    <TD>{{manufacturer.contact}}</TD>
+    <TD><a href="manufacturers/{{manufacturer.id}}/edit">Edit</a></TD>
+  </TR>      
+  {% endfor %}
+</TABLE>
+
+<a href="manufacturers/new">Add Manufacturer</a>
+
+{% endblock %}

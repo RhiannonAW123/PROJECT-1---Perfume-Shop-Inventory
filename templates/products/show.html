@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <div>
+    <p>{{product.name}}</p>
+    <hr>
+    <p>{{product.description}}</p>
+    <p>{{product.manufacturer.full_name()}}</p>
+    <p>{{book.publisher}}</p>
+    <p><a href="/books/{{book.id}}/edit">Edit</a></p>
+  </div>
+
+{% endblock %}

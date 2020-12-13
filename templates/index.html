@@ -1,6 +1,49 @@
-{% extends "base.html" %}
-{% block home %}
-<section id="home-image">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Perfume Shop Inventory</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
 
-</section>
-{% endblock %}
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+.perfume_cta {
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  width: 250px;
+  height: 150px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>The Perfume Depot</h1>
+  <p>The fragrance larger than life</p>
+</div>
+
+<div class="content">
+<a type="button" class="perfume_cta" href="products">Inventory</a>
+
+<a type="button" class="perfume_cta" href="manufacturers">Manufacturers</a>
+</div>
+
+</body>
+</html>

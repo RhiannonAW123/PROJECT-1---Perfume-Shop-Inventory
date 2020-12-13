@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/manufacturers/{{manufacturer.id}}" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="{{manufacturer.name}}" required>
+  </div>
+
+  <div>
+    <label for="contact">Contact:</label>
+    <input type="text" id="contact" name="contact" value="{{manufacturer.contact}}" required autofocus>
+  </div>
+
+  <button type="submit">Update Manufacturer</button>
+
+</form>
+
+{% endblock %}
