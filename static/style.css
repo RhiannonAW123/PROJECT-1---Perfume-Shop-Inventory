@@ -7,7 +7,7 @@ body {
   .header {
     padding: 60px;
     text-align: center;
-    background: #1abc9c;
+    background: #bc1ab4;
     color: white;
     font-size: 30px;
   }
@@ -22,3 +22,22 @@ body {
   
   /* Page Content */
   .content {padding:20px;}
+
+  .menu {
+      padding-right: 10px;
+      list-style: none;
+      background-color: skyblue;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif; font-size: 16px;
+  }
+
+  .container{
+    display: grid;
+    width: 900px;
+    margin: 0 auto;
+    background: #79a9e0;
+    color: white;
+
+  }
+
+
