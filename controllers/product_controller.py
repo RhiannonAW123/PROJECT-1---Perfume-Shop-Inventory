@@ -6,6 +6,10 @@ import repositories.manufacturer_repository as manufacturer_repository
 
 products_blueprint = Blueprint("products", __name__)
 
+@products_blueprint.route('/home')
+def home ():
+    return render_template ('index.html')
+
 @products_blueprint.route("/products")
 def products():
     products = product_repository.select_all() # NEW
