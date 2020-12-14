@@ -1,5 +1,5 @@
 body {
-    font-family: "Helvetica", arial, sans-serif; font-size: 16px;  
+    font-family: "Bebas Neue", arial, sans-serif; font-size: 16px;  
     margin: 0;
   }
   
@@ -7,17 +7,19 @@ body {
   .header {
     padding: 60px;
     text-align: center;
-    background: pink;
-    color: white;
-    font-size: 30px;
+    background: rgb(0, 0, 0);
+    color: rgb(255 113 165);
+    font-family:"Bebas Neue", arial, sans-serif; font-size: 30px;
+    background-image: url("images/bottles.jpg");
   }
   .perfume_cta {
+    padding-top: 50px;
     text-align: center;
-    background: #1abc9c;
-    color: white;
+    background: black;
+    color: rgb(252, 250, 230);
     font-size: 30px;
     width: 250px;
-    height: 150px;
+    height: 85px;
   }
   
   /* Page Content */
@@ -35,18 +37,32 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      background-color: skyblue;
+      background-color: rgb(255, 103, 148);
       color: white;
-      font-family: Arial, Helvetica, sans-serif; font-size: 16px;
+      font-family: "Bebas Neue", Helvetica, sans-serif; font-size: 16px;
   }
 
   .container{
-    display: grid;
+    display: inline-flexbox;
     width: 900px;
     margin: 0 auto;
-    background: #79a9e0;
+    background: rgb(255, 103, 148);
     color: white;
 
   }
 
+  .table_headers {
+      background-color: black;
+  }
 
+  .col_headers {
+      background-color: black;
+  }
+
+ .buttons {
+     padding: 3px;
+     display: inline-block;
+     border-radius: 12px;
+     background-color: black;
+     color: blanchedalmond;
+ }

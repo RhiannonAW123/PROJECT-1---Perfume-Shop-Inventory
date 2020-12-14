@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <title>The Perfume Depot</title>
 </head>
@@ -12,9 +13,9 @@
   <header>
     <nav class="base_nav">
       <ul class="menu">
-        <li><a href='/home'>Home</a></li>
-        <li><a href='/products'>Inventory</a></li>
-        <li><a href='/manufacturers'>Manufacturers</a></li>
+        <li><a href='/home'><button class="buttons">Home</button></a></li>
+        <li><a href='/products'><button class="buttons">Inventory</button></a></li>
+        <li><a href='/manufacturers'><button class="buttons">Manufacturers</button></a></li>
       </ul>
     </nav>
   </header>
