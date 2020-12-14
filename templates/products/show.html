@@ -5,9 +5,11 @@
     <p>{{product.name}}</p>
     <hr>
     <p>{{product.description}}</p>
-    <p>{{product.manufacturer.full_name()}}</p>
-    <p>{{book.publisher}}</p>
-    <p><a href="/books/{{book.id}}/edit">Edit</a></p>
+    <p>{{product.stock}}</p>
+    <p>{{product.buy_price}}</p>
+    <p>{{product.sell_price}}</p>
+    <p>{{product.manufacturer.name}}</p>
+    <p><a href="/products/{{product.id}}/edit">Edit</a></p>
   </div>
 
 {% endblock %}
