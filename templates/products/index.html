@@ -17,12 +17,12 @@
   </TR>
   {% for product in all_products %}
   <TR ALIGN="CENTER">
-    <TD>{{product.name}}</TD>
-    <TD>{{product.description}}</TD>
-    <TD>{{product.stock}}</TD>
-    <TD>{{product.buy_price}}</TD>
-    <TD>{{product.sell_price}}</TD>
-    <TD>{{product.manufacturer.name}}</TD>
+    <TD class="table_info">{{product.name}}</TD>
+    <TD class="table_info">{{product.description}}</TD>
+    <TD class="table_info">{{product.stock}}</TD>
+    <TD class="table_info">{{product.buy_price}}</TD>
+    <TD class="table_info">{{product.sell_price}}</TD>
+    <TD class="table_info">{{product.manufacturer.name}}</TD>
     <TD><a href="products/{{product.id}}/edit"><button class="buttons">Edit</button></a></TD>
   </TR>      
   {% endfor %}

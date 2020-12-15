@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form action="/manufacturers" method="post">
+<form class="forms" action="/manufacturers" method="post">
 
-  <div>
+  <div class="form_options">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" placeholder="Name" required autofocus>
   </div>
 
-  <div>
+  <div class="form_options">
     <label for="contact">Contact:</label>
     <input type="text" id="contact" name="contact" placeholder="contact" required autofocus>
   </div>

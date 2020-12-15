@@ -33,6 +33,7 @@ body {
 
   
   .menu {
+      padding: 25px;
       list-style: none;
       display: flex;
       flex-direction: row;
@@ -45,9 +46,11 @@ body {
   .container{
     display: inline-flexbox;
     width: 900px;
+    height: 500px;
     margin: 0 auto;
     background: rgb(255, 103, 148);
-    color: white;
+    color: rgb(255, 103, 148);
+    background-image: url("images/bottles.jpg");
 
   }
 
@@ -61,8 +64,28 @@ body {
 
  .buttons {
      padding: 3px;
-     display: inline-block;
-     border-radius: 12px;
+     display: flex;
+     border-radius: 6px;
      background-color: black;
      color: blanchedalmond;
+     float: left;
+     cursor: pointer;
+ }
+
+ .form_options {
+     background-color: black;
+     padding: 5px;
+     display: flex;
+     flex-direction: row;
+     justify-content: left;
+     align-content: center;
+ }
+
+ .forms {
+    padding: 40px;
+    margin: auto;
+ }
+
+ .table_info {
+     background-color: black;
  }
