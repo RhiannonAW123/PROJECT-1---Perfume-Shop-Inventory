@@ -20,7 +20,13 @@
   <TR ALIGN="CENTER">
     <TD class="table_info">{{product.name}}</TD>
     <TD class="table_info">{{product.description}}</TD>
+    {% if product.stock == 0 %}
+    <TD class="table_info no_stock">{{product.stock}}</TD>
+    {% elif product.stock < 45 %}
+    <TD class="table_info low_stock">{{product.stock}}</TD>
+    {% else %}
     <TD class="table_info">{{product.stock}}</TD>
+    {% endif %}
     <TD class="table_info">{{product.buy_price}}</TD>
     <TD class="table_info">{{product.sell_price}}</TD>
     <TD class="table_info">{{product.manufacturer.name}}</TD>

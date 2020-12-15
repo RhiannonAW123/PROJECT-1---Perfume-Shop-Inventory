@@ -124,3 +124,10 @@ body {
 
  }
 
+.low_stock {
+    color: yellow;
+}
+
+.no_stock {
+    color: crimson;
+}
