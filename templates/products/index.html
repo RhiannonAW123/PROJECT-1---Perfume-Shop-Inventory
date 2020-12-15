@@ -14,6 +14,7 @@
      <TH>Sell Price</TH>
      <TH>Manufacturer</TH>
      <TH></TH>
+     <TH></TH>
   </TR>
   {% for product in all_products %}
   <TR ALIGN="CENTER">
@@ -24,10 +25,13 @@
     <TD class="table_info">{{product.sell_price}}</TD>
     <TD class="table_info">{{product.manufacturer.name}}</TD>
     <TD><a href="products/{{product.id}}/edit"><button class="buttons">Edit</button></a></TD>
+    <TD><form action="products/{{product.id}}/delete" method="POST"><button class="buttons">Delete</button></form></TD>
+      
   </TR>      
   {% endfor %}
 </TABLE>
 
 <a href="products/new"><button class="buttons">Add Product</button></a>
+
 
 {% endblock %}

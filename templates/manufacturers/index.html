@@ -10,16 +10,20 @@
      <TH>Name</TH>
      <TH>Contact</TH>
      <TH></TH>
+     <TH></TH>
   </TR>
   {% for manufacturer in all_manufacturers %}
   <TR ALIGN="CENTER">
     <TD class="table_info">{{manufacturer.name}}</TD>
     <TD class="table_info">{{manufacturer.contact}}</TD>
     <TD><a href="manufacturers/{{manufacturer.id}}/edit"><button class="buttons">Edit</button></a></TD>
+    <TD><form action="manufacturers/{{manufacturer.id}}/delete" method="POST"><button class="buttons">Delete</button></form></TD>
   </TR>      
   {% endfor %}
 </TABLE>
 
 <a href="manufacturers/new"><button class="buttons">Manufacturer</button> </a>
+
+
 
 {% endblock %}

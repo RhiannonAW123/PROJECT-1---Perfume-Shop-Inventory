@@ -6,6 +6,7 @@ body {
   /* Header/Logo Title */
   .header {
     padding: 60px;
+    text-shadow: 2px 2px rgb(97, 5, 40);
     text-align: center;
     background: rgb(0, 0, 0);
     color: rgb(255 113 165);
@@ -16,7 +17,7 @@ body {
     padding-top: 50px;
     text-align: center;
     background: black;
-    color: rgb(252, 250, 230);
+    color: rgb(255, 103, 148);
     font-size: 30px;
     width: 250px;
     height: 85px;
@@ -28,6 +29,7 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      
 }
 
 
@@ -49,17 +51,19 @@ body {
     height: 500px;
     margin: 0 auto;
     background: rgb(255, 103, 148);
-    color: rgb(255, 103, 148);
+    color: blanchedalmond;
     background-image: url("images/bottles.jpg");
 
   }
 
   .table_headers {
       background-color: black;
+      width: fit-content;
   }
 
   .col_headers {
       background-color: black;
+      color: rgb(255, 103, 148);
   }
 
  .buttons {
@@ -67,9 +71,10 @@ body {
      display: flex;
      border-radius: 6px;
      background-color: black;
-     color: blanchedalmond;
+     color: rgb(255, 103, 148);
      float: left;
      cursor: pointer;
+     font-family: "Bebas Neue", Helvetica, sans-serif;
  }
 
  .form_options {
@@ -93,6 +98,29 @@ body {
  .form_headers {
      padding: 10px;
      background-color: black;
+     color: rgb(255, 103, 148);
      text-align: center;
      font-family:"Bebas Neue", arial, sans-serif; font-size: 20px;
+ }
+
+ .about {
+     background-color: black;
+     color: blanchedalmond;
+     text-align: center;
+     margin: 30px;
+     padding: 20px;
+ }
+
+ .main_buttons {
+    padding: 20px;
+    display: flex;
+    border-radius: 2px;
+    background-color: black;
+    color: blanchedalmond;
+    float: left;
+    cursor: pointer;
+    font-family: "Bebas Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    
+
  }
