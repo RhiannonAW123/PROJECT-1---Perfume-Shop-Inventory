@@ -46,8 +46,6 @@ body {
   }
 
   .container{
-    display: flex;
-    flex-direction: row;
     width: 900px;
     height: 500px;
     margin: 0 auto;
