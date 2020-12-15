@@ -3,7 +3,7 @@
 
 <TABLE  WIDTH="100%"   CELLPADDING="4" CELLSPACING="3">
   <TR class="table_headers">
-     <TH COLSPAN="3"><BR><H3>Manufacturers</H3>
+     <TH COLSPAN="3"><BR><H2>Manufacturers</H2>
      </TH>
   </TR>
   <TR class="col_headers">
@@ -13,8 +13,8 @@
   </TR>
   {% for manufacturer in all_manufacturers %}
   <TR ALIGN="CENTER">
-    <TD>{{manufacturer.name}}</TD>
-    <TD>{{manufacturer.contact}}</TD>
+    <TD class="table_info">{{manufacturer.name}}</TD>
+    <TD class="table_info">{{manufacturer.contact}}</TD>
     <TD><a href="manufacturers/{{manufacturer.id}}/edit"><button class="buttons">Edit</button></a></TD>
   </TR>      
   {% endfor %}

@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
+<div class="form_headers">
+  <h2>Edit Product</h2>
+</div>
+
 <form class="forms" action="/products/{{product.id}}" method="post">
+
   <div class="form_options">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" value="{{product.name}}" required>

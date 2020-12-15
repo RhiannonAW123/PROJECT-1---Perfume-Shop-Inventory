@@ -89,3 +89,10 @@ body {
  .table_info {
      background-color: black;
  }
+
+ .form_headers {
+     padding: 10px;
+     background-color: black;
+     text-align: center;
+     font-family:"Bebas Neue", arial, sans-serif; font-size: 20px;
+ }
