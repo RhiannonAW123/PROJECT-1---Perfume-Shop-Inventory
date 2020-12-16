@@ -5,7 +5,7 @@ Heres a wee read me for my first porject. It is a shop invetory to be used by sh
 They can also edit and create products and manufacturers. The inventory page also shows whether stock is low or out of stock. 
 
 To Clone and Run this:
-1. CLone from git hub
+1. Clone from git hub
 2. open terminal 
 3. Create a data base "createdb" with a name example "createdb shop"
 4. run "psql -d <database name> -f db/<filename.sql>" to drop and create the database do this twice so it exists.
