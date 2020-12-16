@@ -4,6 +4,18 @@
 Heres a wee read me for my first porject. It is a shop invetory to be used by shop staff so they can see what stock and manufacturers they have. 
 They can also edit and create products and manufacturers. The inventory page also shows whether stock is low or out of stock. 
 
+To Clone and Run this:
+1. CLone from git hub
+2. open terminal 
+3. Create a data base "createdb" with a name example "createdb shop"
+4. run "psql -d <database name> -f db/<filename.sql>" to drop and create the database do this twice so it exists.
+5. run "python3 console.py" to put the info from the console.py file into the data base. 
+
+7. run "flask run" and open a google chrome browser copy the local host into the bar eg. "http://127.0.0.1:5000/"
+8. This should open the app and everything should be running (fingers crossed!)
+
+The technologies used in this app are Python,SQL,Flask, Pscopg2, Html and CSS
+
 
 THE BRIEF:
 Shop Inventory
